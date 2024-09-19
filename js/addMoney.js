@@ -13,6 +13,7 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
     const availableAmount = parseFloat(mainBalance);
     const totalAvailableAmount = newAmount + availableAmount;
     document.getElementById('main-balance').innerText = totalAvailableAmount;
+    document.getElementById('add-money-message').innerText = "Successfully Added Your Amount";
     addMoneyForm.reset();
     
   }

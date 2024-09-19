@@ -12,6 +12,7 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
     const mainAmount = parseFloat(mainBalance);
     const afterCashOutAmount = mainAmount - cashOutAmount;
     document.getElementById('main-balance').innerText = afterCashOutAmount;
+    document.getElementById('cash-out-message').innerText = "Successfully Cash Out";
     cashOutForm.reset();
   }
   else{
